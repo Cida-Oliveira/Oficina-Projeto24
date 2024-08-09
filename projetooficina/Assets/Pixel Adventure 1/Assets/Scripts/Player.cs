@@ -38,9 +38,20 @@ public bool doubleJump;
 
     void Jump() 
     {
-        if(Input.GetButtonDown("Jump") && !isJumping)
+        if(Input.GetButtonDown("Jump"))
         {
+            if(!isJumping)
+            {
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+            doubleJump = true;
+            }
+            else
+            {
+                if(doubleJump){
+                    rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+                    doubleJump = false;
+                }
+            }
         }
     }
 
