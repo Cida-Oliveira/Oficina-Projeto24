@@ -13,12 +13,14 @@ public float JumpForce;
 public bool isJumping;
 public bool doubleJump;
 
+private Animator anim;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         
     }
 
@@ -34,6 +36,20 @@ public bool doubleJump;
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * Speed;
+
+        if(Input.GetAxis("Horizontal") > 0f){
+            anim.SetBool("walk", true);
+            transform.eulerAngles = new Vector3(0f,0f,0f);
+        }
+
+        if(Input.GetAxis("Horizontal") < 0f){
+            anim.SetBool("walk", true);
+            transform.eulerAngles = new Vector3(0f,180,0f);
+        }
+
+        if(Input.GetAxis("Horizontal") == 0f){
+            anim.SetBool("walk", false);
+        }
     }
 
     void Jump() 
@@ -44,7 +60,9 @@ public bool doubleJump;
             {
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
             doubleJump = true;
+             anim.SetBool("jump", true);
             }
+
             else
             {
                 if(doubleJump){
@@ -60,6 +78,7 @@ public bool doubleJump;
         if(collision.gameObject.layer == 8)
         {
             isJumping = false;
+            anim.SetBool("jump", false);
         }
     }
 
@@ -70,5 +89,5 @@ public bool doubleJump;
             isJumping = true;
         }
     }
-    }
-
+    
+}
