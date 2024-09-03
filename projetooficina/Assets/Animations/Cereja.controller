@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1102 &-9083597977460965221
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "fuma\xE7a_certo"
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 67a006e0cffc8734388e59a6eeb15220, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -35,8 +61,16 @@ AnimatorStateMachine:
     m_State: {fileID: 4076111283884457953}
     m_Position: {x: 200, y: 0, z: 0}
   - serializedVersion: 1
+<<<<<<< HEAD
+    m_State: {fileID: 3714404468274982116}
+    m_Position: {x: 235, y: 65, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -9083597977460965221}
+    m_Position: {x: 270, y: 130, z: 0}
+=======
     m_State: {fileID: 2863141098327298402}
     m_Position: {x: 235, y: 65, z: 0}
+>>>>>>> d49d32812d2d221fec48d53401e9b2889c449cd1
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -47,14 +81,22 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 4076111283884457953}
+<<<<<<< HEAD
+--- !u!1102 &3714404468274982116
+=======
 --- !u!1102 &2863141098327298402
+>>>>>>> d49d32812d2d221fec48d53401e9b2889c449cd1
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_Name: "fuma\xE7a"
+=======
   m_Name: animation cereja
+>>>>>>> d49d32812d2d221fec48d53401e9b2889c449cd1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -67,7 +109,11 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
+<<<<<<< HEAD
+  m_Motion: {fileID: 7400000, guid: a1eac798cd59d4f49a212c0df2a5b2a3, type: 2}
+=======
   m_Motion: {fileID: 7400000, guid: 158a5257b7397b8428d69f5e91a28e0a, type: 2}
+>>>>>>> d49d32812d2d221fec48d53401e9b2889c449cd1
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
