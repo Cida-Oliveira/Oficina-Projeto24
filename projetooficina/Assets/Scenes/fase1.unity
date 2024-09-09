@@ -1507,7 +1507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalScore: 0
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1385344759}
 --- !u!4 &686847919
 Transform:
 >>>>>>> d49d32812d2d221fec48d53401e9b2889c449cd1
